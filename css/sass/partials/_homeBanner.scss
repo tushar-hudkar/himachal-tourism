@@ -1,0 +1,208 @@
+.homeBanner{
+	@extend %leftfull;
+    margin-bottom: 78px;
+	height: 562px;
+    @include box-sizing(boxsizing);
+    @extend %pos-relative;
+	background: url("../../../img/homeBanner.jpg")no-repeat top center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	@extend %center;
+  	
+}
+
+.banner-content{
+    @extend %leftfull;
+    @extend %pos-relative;
+    height: 562px;
+    @include box-sizing(boxsizing);
+}
+
+
+h4.tagLine{
+	@extend %leftfull;
+	margin-top: 82px;
+    @include box-sizing(boxsizing);
+    font-size: 2rem;
+    line-height: 2.375rem;
+    color: $font-color;
+    text-transform: uppercase;
+    @extend %center;
+}
+
+h5.tagLine2{
+	@extend %leftfull;
+	margin-bottom: 18px;
+    @include box-sizing(boxsizing);
+    font-size: 1.625rem;
+    line-height: 2rem;
+    color: $font-color;
+    @extend %center;
+}
+
+.star-ratings_Banner{
+            @extend %left;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            unicode-bidi: bidi-override;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            padding: 0;
+            text-shadow: 0px 1px 0 #a2a2a2;
+          
+          .star-ratings_static{
+                @extend %left;
+                padding: 0;
+                z-index: 1;
+                display: block;
+                overflow: hidden;
+
+                span{
+                    @extend %left;
+                    color: #ffc600;             
+              }
+
+              span.dull-star{
+                    @extend %left;
+                    color: #e4e4e4;
+              }
+        }
+    }
+
+
+
+.search{
+	@extend %left;
+	min-width: 44%;
+	@extend %pos-relative;
+	@include box-sizing(boxsizing);
+	background-color: rgba(255,255,255,0.9);
+	margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 0px 4px 36px;
+  	@include border-radius(3px);
+
+	.search-icon{
+		@extend %left;
+		@include box-sizing(boxsizing);
+		padding: 12px 10px;
+		@extend %pos-absolute;
+		left: 0px;
+		top: 0px;
+		background-color: transparent;
+		@extend %pointer;
+
+		.search_icon{
+			@extend %left;
+            margin-top: 4px;
+			font-size: 1.0625rem;
+	    	line-height: 0.8125rem;
+	    	color: $font-color;
+		}
+	}
+
+    form{
+    	@extend %leftfull;
+    	background-color: transparent;
+
+    	input{
+    		@extend %left;
+		    width: 85%;
+		    @include box-sizing(boxsizing);
+		    padding: 10px;
+		    background-color: transparent;     
+		    border: none;  
+		    outline: none;
+		    font-size: 1.0625rem;
+		    color: $font-color;
+    	}
+
+    	.search-btn_container{
+    		@extend %left;
+    		width: 15%;
+
+    	button.search-btn{
+    		@extend %left;
+    		margin-top: 5px;
+    		margin-left: 50%;
+    		transform: translateX(-50%);
+		    @include box-sizing(boxsizing);
+		    padding: 6px 20px;
+		    background-color: #fff;     
+		    border: none;  
+		    outline: none;		
+		    @include border-radius(14px);
+		    -webkit-box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+			-moz-box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+			-ms-box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+			box-shadow: 0px 2px 6px rgba(0,0,0,0.2);   
+
+		    .search-right_btn{
+		    	@extend %left;
+		    	font-size: 1.0625rem;
+		    	line-height: 0.8125rem;
+		    	color: #0189ff;
+		    }
+    	}
+
+    	}
+    }
+}
+
+
+.bounce-container{
+    
+}
+
+.bounce {
+	@extend %left;
+    width: 18px;
+    height: 34px;
+    @extend %pos-absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:0;
+    background: rgba(255,255,255,0.9);
+    @include border-radius(12px);
+    -webkit-animation:bounce 1s infinite;
+    -moz-animation:bounce 1s infinite;
+    -o-animation:bounce 1s infinite;
+    animation:bounce 1s infinite;
+    @extend %pointer;
+
+    .bounce-downArrow{
+    	@extend %left;
+    	margin-left: 50%;
+	    margin-top: 86%;
+	    transform: translate(-50%, -50%);
+    	font-size: 0.625rem;
+    	color: #0189ff;
+    }
+    
+  }
+  
+  @-webkit-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-moz-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-o-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }

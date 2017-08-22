@@ -1,0 +1,89 @@
+header{
+	@extend %leftfull;
+	height: 76px;
+    @include box-sizing(boxsizing);
+    background-color: $primary-color;
+    padding: 14px 0px;
+}
+
+h1.logo{
+	@extend %left;
+	margin-top: 6px;
+
+	img{
+		@extend %left;
+		max-width: 100%;
+		width: 220px;
+	}
+}
+
+.signUp{
+	@extend %right;
+	padding: 8px 0px;
+
+	p.logIn{
+		@extend %left;
+		margin-top: 4px;
+		font-size: 1rem;
+		color: #fff;
+		@extend %pointer;
+
+		a{
+			text-decoration: none;
+		}
+	}
+
+	button.register-btn{
+		@extend %left;
+		padding: 8px 10px;
+		margin-left: 22px;
+        background-color: #fff;
+        @include border-radius(14px);
+        font-size: 1rem;
+        color: #0189ff;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        @extend %pointer;
+	}
+
+	.v-dots{
+		@extend %left;
+		margin-left: 20px;
+		margin-top: 6px;
+		font-size: 1rem;
+		line-height: 1.625rem;
+		color: #fff;	
+		@extend %pointer;	
+	}
+}
+
+
+@media screen and (max-width: 640px){
+	header{
+		height: 54px;
+	}
+
+h1.logo{
+	margin-top: 3px;
+
+	img{
+		width: 146px;
+	}
+}
+
+.signUp{
+	padding: 2px 0px;
+	p.logIn{
+		margin-top: 6px;
+	}
+
+	button.register-btn{
+		margin-left: 14px;
+		padding: 6px 8px;
+	}
+
+	.icon-ellipsis-v{
+	}
+}
+}

@@ -1,0 +1,5 @@
+footer{
+	@extend %leftfull;
+    @include box-sizing(boxsizing);
+    background-color: $primary-color;
+}

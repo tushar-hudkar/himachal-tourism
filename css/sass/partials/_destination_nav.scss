@@ -1,0 +1,128 @@
+nav.destination_nav{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	margin-bottom: 78px;
+
+	ul{
+		@extend %leftfull;
+		@extend %center;
+
+		li{
+			list-style: none;
+			padding-bottom: 6px;
+			margin: 0 2%;
+			display: inline-block;
+			font-size: 1rem;
+		    color: $font-color;
+		    text-transform: capitalize;
+		}
+
+		li.active{
+			border-bottom: 2px solid #6229cb;
+		}
+	}
+}
+
+.map_bg{
+	@extend %leftfull;
+	margin-bottom: 78px;
+	@include box-sizing(boxsizing);
+	/* height: 462px; */
+    @extend %pos-relative;
+    z-index: 2;
+	background: url("../../../img/map-bg2.jpg")no-repeat fixed top center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+
+	.white-overlay{
+		@extend %leftfull;
+		@extend %pos-absolute;
+		z-index: -1;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+}
+
+
+.nav-detail{
+	@extend %leftfull;
+	margin-bottom: 78px;
+	@include box-sizing(boxsizing);
+    @extend %pos-relative;
+
+	.about-img{
+		@extend %leftfull;
+
+		img{
+			@extend %left;
+			max-width: 100%;
+		}
+	}
+
+	.about-text{
+		@extend %left;
+		margin-top: 28px;
+
+		p{
+			@extend %left;
+			margin-top: 12px;
+			font-size: 0.875rem;
+			line-height: 1.75rem;
+			color: $font-color;
+
+		}
+	}
+
+	.travel_info{
+		@extend %leftfull;
+		padding-top: 26px;
+
+		.travel-option-container{
+			@extend %leftfull;
+			    margin-bottom: 32px;
+
+			.travel-option-top{
+				@extend %leftfull;
+
+				.travel-by_icon{
+					@extend %left;
+					margin-right: 8px;
+					font-size: 1.25rem;
+					color: $font-color;
+				}
+
+				p{
+					@extend %left;
+					font-size: 1rem;
+					line-height: 1.75rem;
+					color: $font-color;
+					text-transform: uppercase;
+				}
+			}
+
+			p.travel-option-detail{
+				@extend %leftfull;
+				font-size: 0.875rem;
+				line-height: 1.75rem;
+				color: rgba(71, 82, 130, 0.6);
+
+				span{
+					color: $font-color;
+				}
+			}
+		}
+	}
+
+	.map_detail{
+		@extend %leftfull;
+
+		img{
+			@extend %right;
+			max-width: 100%;
+		}
+	}
+}

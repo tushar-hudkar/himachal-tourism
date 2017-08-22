@@ -1,0 +1,172 @@
+.booking-card_info{
+	@extend %leftfull;
+	margin-bottom: 48px;
+	@include box-sizing(boxsizing);
+}
+
+.booking-card{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	@extend %overflow;
+	background-color: #ffffff;
+}
+
+.booking-card_Img{
+	@extend %left;
+	@extend %pos-relative;
+	width: 47%;
+	height: 290px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	@extend %overflow;
+
+	p.remaining-booking{
+		@extend %left;
+		@extend %pos-absolute;
+		z-index: 999;
+		bottom: 10px;
+		left: 10px;
+		font-size: 0.875rem;
+		line-height: 1.125rem;
+		color: #fff;
+	}
+}
+
+.tent_bg{
+	background: url("../../../img/booking/tent.jpg")no-repeat top center;
+}
+
+.hut_bg{
+	background: url("../../../img/booking/hut.jpg")no-repeat top center;
+}
+
+.booking-card_description{
+	@extend %left;
+	@extend %pos-relative;
+	@include box-sizing(boxsizing);
+	padding: 18px 18px 0px 18px;
+	width: 53%;
+
+	h5.book-type_name{
+		@extend %leftfull;
+		margin-bottom: 8px;
+	    @include box-sizing(boxsizing);
+	    font-size: 1rem;
+	    line-height: 1.375rem;
+	    color: $font-color;
+	    text-transform: uppercase;
+	}
+
+	p.light-info{
+		@extend %leftfull;
+		margin-bottom: 8px;
+	    font-size: 0.875rem;
+	    line-height: 1.375rem;
+	    color: rgba(71,82,130,0.6);
+
+	    span.duration-bold{
+	    	color: $font-color;
+	    }
+	}
+
+	.select-number{
+		@extend %leftfull;
+		margin-bottom: 18px;
+		margin-top: 58px;
+		@include box-sizing(boxsizing);
+
+		p.number_input{
+			@extend %left;
+	    	margin-top: 10px;
+		    font-size: 0.875rem;
+		    line-height: 1.375rem;
+		    color: rgba(71,82,130,0.6);
+		}
+	}
+
+	p.prise-per_day{
+			@extend %leftfull;
+			font-size: 1.5rem;
+		    line-height: 0.875rem;
+		    color: $cta-color;
+		    text-align: right;
+
+			.rupee_icon{
+				margin-right: -6px;
+    			font-size: 1rem;
+		    	color: $cta-color;
+			}
+
+			span.per-day{
+				font-size: 0.875rem;
+			}
+
+		    
+		}
+}
+
+
+.proceed-container{
+	@extend %leftfull;
+	margin-bottom: 68px;
+	@include box-sizing(boxsizing);
+	padding: 32px 0px;
+	border-top: 1px solid rgba(0, 0, 0, 0.18);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+
+	.proceed{
+		@extend %right;
+
+		p.total-info{
+			@extend %left;
+			margin-top: 12px;
+			font-size: 1rem;
+			line-height: 1rem;
+		    color: $font-color;
+		}
+
+		.total-prise{
+			@extend %left;
+			margin-top: 6px;
+			margin-left: 18px;
+
+			.rupee_icon{
+				@extend %left;
+				margin-top: 6px;
+    			font-size: 1rem;
+		    	color: $cta-color;
+			}
+
+			span.prise{				
+				@extend %left;
+				font-size: 1.625rem;
+				    line-height: 1.625rem;
+		    	color: $cta-color;
+			}
+		}
+
+		button.proceed_btn{
+			@extend %left;
+			margin-left: 52px;
+			border: none;
+			outline: none;
+			font-size: 1rem;
+		    color: #fff;
+		    background-color: $cta-color;
+		    padding: 10px 26px;
+		    @include border-radius(20px);
+		    text-transform: uppercase;
+
+		    .proceed-right_btn{
+		    	@extend %right;
+			    margin-top: -1px;
+			    margin-left: 10px;
+		    	font-size: 15px;
+		    	color: #fff;
+		    }
+		}
+	}
+}

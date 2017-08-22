@@ -1,0 +1,262 @@
+.destination{
+	@extend %leftfull;
+    @include box-sizing(boxsizing);
+}
+
+.destination-topHead{
+	@extend %leftfull;
+	margin-bottom: 42px;
+	@include box-sizing(boxsizing);
+	@extend %center;
+
+	.destination_icon{
+		display: block;
+		margin-bottom: 8px;
+		float: none;
+		font-size: 2rem;
+		line-height: 2.625rem;
+		color: #ffc600;	
+	}
+
+	h4.destinationHeading{
+		@extend %leftfull;
+	    @include box-sizing(boxsizing);
+	    font-size: 1.125rem;
+	    line-height: 1.625rem;
+	    color: $font-color;
+	    text-transform: uppercase;
+	    @extend %center;
+	}
+
+}
+
+
+.destinationCard{
+	@extend %leftfull;
+    @include box-sizing(boxsizing);
+    margin-bottom: 200px;
+}
+
+.card{
+	@extend %leftfull;
+	margin-bottom: 16px;
+	@extend %overflow;
+	background-color: $grey-color;
+	@extend %overflow;
+}
+
+.destinationImg{
+	@extend %left;
+	@extend %pos-relative;
+	width: 62%;
+	height: 352px;
+	background: url("../../../img/destination/destination1.jpg")no-repeat top center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	@extend %overflow;
+
+	.destination-value{
+		@extend %leftfull;
+		@include box-sizing(boxsizing);
+		padding: 10px;
+		@extend %pos-absolute;
+		z-index: 999;
+		left: 0px;
+		bottom: 0px;
+
+		h5.destination-name{
+			@extend %leftfull;
+			font-size: 1rem;
+			line-height: 1.75rem;
+			color: #ffffff;
+			text-transform: uppercase;
+
+		}
+
+		.star-ratings_info{
+			@extend %left;
+		  	unicode-bidi: bidi-override;
+		  	font-size: 1.25rem;
+		  	line-height: 1.25rem;
+		  	padding: 0;
+		  	text-shadow: 0px 1px 0 #a2a2a2;
+		  
+		  .star-ratings_static{
+		  		@extend %left;
+			  	padding: 0;
+			    z-index: 1;
+			    display: block;
+			    overflow: hidden;
+
+			  	span{
+				  	@extend %left;
+				    color: #ffc600;			    
+			  }
+
+			  span.dull-star{
+			  		@extend %left;
+				    color: #e4e4e4;
+			  }
+		}
+	}
+}
+
+}
+
+.inside-shadow{
+		@extend %leftfull;
+		height: 100%;
+		@extend %pos-absolute;
+		z-index: 99;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: inset 0px -96px 38px -28px rgba(0,0,0,0.2);
+		-moz-box-shadow: inset 0px -96px 38px -28px rgba(0,0,0,0.2);
+		box-shadow: inset 0px -96px 38px -28px rgba(0,0,0,0.2);
+
+	}
+
+.destination-description{
+	@extend %left;
+	@extend %pos-relative;
+	@include box-sizing(boxsizing);
+	padding: 22px 10px 0px 10px;
+	width: 38%;
+}
+	.description-detail{
+		@extend %leftfull;
+		margin-bottom: 14px;
+
+		.calendar_icon{
+			@extend %left;
+			margin-top: 3px;
+			font-size: 0.8125rem;
+	    	color: $font-color;
+		}
+
+		.distance_icon{
+			@extend %left;
+			margin-top: 3px;
+			font-size: 1rem;
+	    	color: $font-color;
+		}
+
+		.stay_icon{
+			@extend %left;
+			margin-top: 3px;
+			font-size: 1rem;
+	    	color: $font-color;
+		}
+
+		p.description-light{
+			@extend %left;
+			margin-left: 10px;
+		    font-size: 0.875rem;
+		    line-height: 1.375rem;
+		    color: rgba(71,82,130,0.6);
+
+		    span.description-bold{
+		    	color: $font-color;
+		    }
+		}
+	}
+
+	.description-detail_tm{
+		margin-top: 12px;
+}
+	.starting-from{
+		@extend %left;
+		margin-top: 74px;
+		@include box-sizing(boxsizing);
+		padding-left: 24px;
+
+		p.starting-from-text{
+			@extend %leftfull;
+		    font-size: 0.875rem;
+		    line-height: 1.375rem;
+		    color: rgba(71,82,130,0.6);
+		}
+
+		.prise{
+			@extend %leftfull;
+
+			.rupee_icon{
+				@extend %left;
+				margin-top: 3px;
+    			font-size: 1.25rem;
+		    	color: $cta-color;
+			}
+
+			p{
+				@extend %left;
+				margin: 0px 18px 0px 2px;
+			    font-size: 1.5rem;
+			    line-height: 1.75rem;
+			    color: $cta-color;
+		    }
+
+		    .prise-right_arrow{
+		    	@extend %left;
+				margin-top: 3px;
+    			font-size: 1.25rem;
+		    	color: $cta-color;
+		    }
+		}
+	}
+
+
+
+@media screen and (max-width: 640px){
+	
+.destinationImg{
+	width: 100%;
+	height: 246px;
+
+	.destination-value{
+
+		h5.destination-name{
+
+		}
+
+		.star-ratings_info{
+		  
+		  .star-ratings_static{
+
+			  	span{		    
+			  }
+
+			  span.dull-star{
+			  }
+		}
+	}
+}
+
+}
+
+.destination-description{
+	width: 100%;
+}
+	.description-detail{
+
+		.icon{
+		}
+
+		p.description-light{
+
+		    span.description-bold{
+		    }
+		}
+	}
+
+	.starting-from{
+
+		p.starting-from-text{
+		}
+
+		p.prise{
+		}
+	}
+
+}

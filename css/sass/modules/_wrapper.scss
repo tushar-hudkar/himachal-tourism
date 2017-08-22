@@ -1,0 +1,12 @@
+.wrapper{
+	@extend %leftfull;
+	@include box-sizing(boxsizing);
+}
+
+.zero_margin{
+	margin: 0px!important;
+}
+
+.zero_padding{
+	padding: 0px!important;
+}
